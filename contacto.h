@@ -1,5 +1,8 @@
-#pragma once
+
 #include <string>
+
+#ifndef CONTACTO_H
+#define CONTACTO_H
 using namespace std;
 class Contacto
 {
@@ -16,3 +19,5 @@ public:
     void establecerId(const int);
     int obtenerId() const;
 };
+
+#endif

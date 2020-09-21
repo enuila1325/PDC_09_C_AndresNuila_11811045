@@ -27,8 +27,8 @@ void leer_el_3(fstream &fcont, Contacto &cont)
 }
 void escribir_el_3(fstream &fcont, Contacto &cont)
 {
-    // INSERTAR CÓDIGO AQUÍ
-    // INSERTAR CÓDIGO AQUÍ
+    fcont.seekp(2 * sizeof(Contacto));
+    fcont.read(reinterpret_cast<char *>(&cont), sizeof(Contacto));
     cont.establecerNombre("NOMBRE 5 -> 5000");
     fcont.write(reinterpret_cast<const char *>(&cont), sizeof(Contacto));
 }

@@ -4,7 +4,7 @@
 using namespace std;
 int main()
 {
-    double raiz2 = sqrt(2.0);
+    double raiz2 = sqrt(2);
     int posiciones;
     cout << "Raiz cuadrada de 2 con precisiones de 0 a 9." << endl
          << "Precision establecida mediante la funcion miembro precision "
